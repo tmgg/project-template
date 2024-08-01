@@ -6,7 +6,7 @@ db_database: project-template # 请修改
 tmgg:
   system:
     # 站点名称
-    site-title: 项目模板xxx
+    site-title: TMGG模板
 
 
 #服务配置
