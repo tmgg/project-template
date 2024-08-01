@@ -4,8 +4,7 @@
     "start": "umi dev",
     "start-legacy": "SET NODE_OPTIONS=--openssl-legacy-provider && umi dev",
     "build": "umi build",
-    "build-legacy": "SET NODE_OPTIONS=--openssl-legacy-provider && umi build",
-    "use-aliyun-mirror":  "npm config set registry https://registry.npmmirror.com"
+    "build-legacy": "SET NODE_OPTIONS=--openssl-legacy-provider && umi build"
   },
   "dependencies": {
     "@ant-design/icons": "^4.0.0",
