@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <SysApp>
+        <id>biz</id>
+        <name>业务模块</name>
+        <code>biz</code>
+        <seq>1</seq>
+        <active>Y</active>
+    </SysApp>
+
+
+
+
+
+</root>

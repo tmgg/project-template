@@ -1,0 +1,6 @@
+/app-log/
+/.idea/
+/target/
+/web/node_modules/
+/web/src/.umi/
+/web/package-lock.json

@@ -1,0 +1,67 @@
+db_port: 3306
+db_ip: 127.0.0.1
+db_password: 123456 # 请勿使用简单密码
+db_database: project-template # 请修改
+
+tmgg:
+  system:
+    # 站点名称
+    site-title: 项目模板xxx
+
+
+#服务配置
+server:
+  port: 82
+  servlet:
+    session:
+      cookie:
+        # 防止跨域漏洞
+        same-site: strict
+        secure: true
+
+#spring相关配置
+spring:
+  profiles:
+    active: dev
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+    locale: zh_CN
+    serialization:
+      # 格式化输出
+      indent_output: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${db_ip}:${db_port}/${db_database}?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&nullCatalogMeansCurrent=true
+    username: root
+    password: ${db_password}
+  jpa:
+    hibernate.ddl-auto: update
+    database: MYSQL
+    database-platform: MYSQL
+    show-sql: true
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
+    naming.physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+  data:
+    web:
+      pageable:
+        default-page-size: 10
+        max-page-size: 2000
+        one-indexed-parameters: true
+        page-parameter: pageNo
+        size-parameter: pageSize
+      sort.sort-parameter: orderBy
+  servlet:
+    multipart:
+      maxFileSize: 100MB
+      maxRequestSize: 200MB
+  application:
+    name: template-app
+logging:
+  level:
+    root: info
+
+
+
+
+

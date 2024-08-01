@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <SysMenu id="student" name="学生"  code="student" router="/student" type="MENU" application="biz" status="ENABLE" visible="Y" />
+</root>
