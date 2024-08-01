@@ -1,5 +1,4 @@
 {
-  "private": true,
   "scripts": {
     "start": "umi dev",
     "start-legacy": "SET NODE_OPTIONS=--openssl-legacy-provider && umi dev",
