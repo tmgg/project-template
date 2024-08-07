@@ -52,5 +52,10 @@ export default defineConfig({
       changeOrigin: true,
       pathRewrite: { '^/weapp': '/weapp' },
     },
+    '/kettle': {
+      target: proxyTarget,
+      changeOrigin: true,
+      pathRewrite: { '^/kettle': '/kettle' },
+    },
   },
 });
