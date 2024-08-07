@@ -1,12 +1,12 @@
 db_port: 3306
 db_ip: 127.0.0.1
 db_password: 123456 # 请勿使用简单密码
-db_database: project-template # 请修改
+db_database: tmgg # 请修改
 
 tmgg:
   system:
     # 站点名称
-    site-title: TMGG模板
+    site-title: 项目模板
 
 
 #服务配置
